@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Tic_Tak_Toe = () => {
+const Tic_Tac_Toe = () => {
     const O = "O";
     const X = "X";
     let currentPlayer = X;
@@ -95,7 +95,7 @@ const Tic_Tak_Toe = () => {
 
     return (
         <div className='container'>
-            <h1 className="ttt">Tic-Tak-Toe</h1>
+            <h1 className="ttt">Tic-Tac-Toe</h1>
             <h1 className='title'></h1>
             <div className='gameboard '>
                 <div className="box" id="0"></div>
@@ -113,4 +113,4 @@ const Tic_Tak_Toe = () => {
     );
 };
 
-export default Tic_Tak_Toe;
+export default Tic_Tac_Toe;
