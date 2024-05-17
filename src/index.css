@@ -1,13 +1,86 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.winning-blocks {
+  background-color: rgba(255, 255, 255, 0.189) !important;
+  border-radius: 3px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  color: black;
+  font-family: 'finger paint',cursive;
+  caret-color: transparent;
+  height: 100hv;
+}
+
+h1{
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.ttt{
+  text-decoration: underline;
+  text-decoration-line: underline curved;
+  text-underline-offset: 7px;
+}
+.container{
+  height: 100vh;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:#37505c;
+}
+.gameboard{
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.box{
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:aliceblue;
+  font-size: 120px;
+  border-right: 6px solid ;
+  border-bottom: 6px solid ;
+}
+.box.box:nth-child(3n){
+  border-right: none;
+}
+
+.box.box:nth-child(6n)~.box{
+  border-bottom: none;
+}
+
+button{
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: orange;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'finger paint',cursive;
+  border: none;
+  border-radius: 5px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+button:hover{
+  transform: scale(1.1);
+  color: whitesmoke;
+  background-color: black;
+}
+.title{
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+
 }
