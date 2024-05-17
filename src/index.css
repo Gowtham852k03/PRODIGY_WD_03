@@ -7,16 +7,32 @@
   background-color: rgba(255, 255, 255, 0.189) !important;
   border-radius: 3px;
 }
+html{
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+
 
 body{
-  color: black;
+  color: rgb(0, 0, 0);
   font-family: 'finger paint',cursive;
   caret-color: transparent;
   height: 100hv;
+
+}
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color:rgb(192, 144, 73);
 }
 
+
 h1{
-  font-size: 60px;
+  font-size: 55px;
   text-transform: uppercase;
 }
 .ttt{
@@ -26,26 +42,29 @@ h1{
 }
 .container{
   height: 100vh;
+  width:450px;
   padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color:#37505c;
+  background-color:rgb(192, 144, 73);
+  overflow: hidden;
 }
 .gameboard{
-  width: 100%;
+  width: 450px;
   display:inherit;
   flex-wrap: wrap;
   margin-top: 30px;
   font-size: medium;
 }
-  @media (min-width: 450px) {
-    .gameboard {
-      width: 450px;
-      
-    }
+ 
+@media (max-width: 450px) {
+   
+  body {
+    height: auto;
   }
+}
 
 .box{
   height: 150px;

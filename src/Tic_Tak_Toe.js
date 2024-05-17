@@ -97,7 +97,7 @@ const Tic_Tak_Toe = () => {
         <div className='container'>
             <h1 className="ttt">Tic-Tak-Toe</h1>
             <h1 className='title'></h1>
-            <div className='gameboard'>
+            <div className='gameboard '>
                 <div className="box" id="0"></div>
                 <div className="box" id="1"></div>
                 <div className="box" id="2"></div>
