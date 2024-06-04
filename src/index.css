@@ -27,7 +27,7 @@ body{
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  background-color:rgb(192, 144, 73);
+  background-color:rgb(0, 0, 0);
 }
 
 
@@ -42,13 +42,14 @@ h1{
 }
 .container{
   width: 100%;
+  max-width: 520px;
   height: 100vh;
   padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color:rgb(192, 144, 73);
+  background-color:rgb(100, 203, 247);
   overflow: hidden;
 }
 .gameboard{
